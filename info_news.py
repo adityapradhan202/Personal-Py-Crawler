@@ -23,6 +23,8 @@ def tech_news_data(soup:BeautifulSoup):
 
 tech_soup = content_fetcher(verge_tech_url)
 titles, title_links = tech_news_data(tech_soup)
-print(len(titles))
-print(titles[10])
-print(title_links[10])
+
+if __name__ == "__main__":
+    print(len(titles[0]))
+    print(titles[2])
+    print(title_links[2])
